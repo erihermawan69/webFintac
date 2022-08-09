@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 2000px;
+}
+
+.navbar {
+  background-color: #fff !important;
+  font-size: 18px;
+  padding: 20px 0px;
+  font-weight: 500;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+  background-color: rgba(236, 233, 43, 0.925);
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  margin-top: -5px;
+  left: 100%;
+}
+.dropdown-menu > li > a:hover::after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.img {
+  width: 100%;
+}
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+/* Own Carousel */
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  place-items: center;
+  background-color: #ffffff00 !important;
+  margin-top: -50px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  border-radius: 100px !important;
+}
+
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+
+/* Slider */
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), url("/assets/img/slide-1.png");
+}
+
+.title-1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: rgb(0, 42, 104);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.sub-title-1 {
+  margin-bottom: 70px;
+  color: rgba(236, 233, 43, 0.925);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(13, 110, 253, 0.1), rgba(255, 255, 255, 0.3)), url("/assets/img/slide-2.png");
+}
+
+.title-2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: rgb(13, 110, 253);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.sub-title-2 {
+  margin-bottom: 70px;
+  color: rgb(80, 107, 165);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.slide3 {
+  background: linear-gradient(rgba(253, 229, 13, 0.1), rgba(255, 255, 255, 0.3)), url("/assets/img/slide-3.png");
+}
+.title-3 {
+  margin-top: 100px;
+  color: rgb(253, 121, 13);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* Content MS */
+#layanan {
+  padding: 0;
+  background-color: #fff;
+}
+
+h2 {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Roboto;
+  color: #0e0d0d;
+}
+
+.sub-title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0e0d0d;
+}
+
+/* MS */
+.card-layanan {
+  padding-top: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.1s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--pr-color);
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+}
+
+.card-layanan h3 {
+  color: var(--pr-color);
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan p {
+  color: #000;
+  font-size: 15px;
+  transition: all 0.4s ease-in;
+}
+
+.card-layanan a {
+  text-decoration: none;
+}
+
+/* MS Hover */
+.card-layanan:hover {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background: linear-gradient(160deg, #6495ed, #c28383);
+  padding: 25px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover p {
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+}
+
+/* Content OS */
+.card-layanan-other {
+  padding-top: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.1s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--pr-color);
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+}
+
+.card-layanan-other h3 {
+  color: var(--pr-color);
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan-other p {
+  color: #000;
+  font-size: 15px;
+  transition: all 0.4s ease-in;
+}
+
+.card-layanan-other a {
+  text-decoration: none;
+}
+
+/* OS Hover */
+.card-layanan-other:hover {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background: linear-gradient(160deg, #6495ed, #52b457);
+  padding: 25px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan-other:hover .circle-icon {
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan-other:hover h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan-other:hover p {
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+}
+
+/* Footer */
